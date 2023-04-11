@@ -32,6 +32,7 @@ nav ul {
   padding: 0;
   display: flex;
   justify-content: space-between;
+  align-items: center; /* Center the navigation vertically */
 }
 
 nav li {
@@ -45,6 +46,7 @@ nav a {
 h1 {
   margin: 0;
   font-size: 32px;
+  text-align: center; /* Center the heading horizontally */
 }
 
 /* Main styles */
@@ -52,6 +54,9 @@ main {
   max-width: 800px;
   margin: 0 auto;
   padding: 20px;
+  background-color: #fff; /* Add a white background */
+  border-radius: 10px; /* Add rounded corners */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
 }
 
 h2 {
@@ -59,8 +64,75 @@ h2 {
   font-size: 24px;
   margin-top: 40px;
   margin-bottom: 20px;
+  text-align: center; /* Center the heading horizontally */
 }
 
 ul li {
   margin-bottom: 10px;
+}
+
+/* Contact styles */
+.contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center the contact section horizontally */
+  margin-top: 40px;
+}
+
+.contact p {
+  margin-bottom: 10px;
+  text-align: center; /* Center the paragraph text horizontally */
+}
+
+.contact ul {
+  text-align: center; /* Center the list text horizontally */
+}
+
+.contact li {
+  margin-bottom: 5px;
+  color: #fff; /* Add white text */
+}
+
+.contact li a {
+  color: #fff; /* Add white text */
+}
+
+.contact li:first-child {
+  margin-top: 10px;
+}
+
+.contact li:last-child {
+  margin-bottom: 10px;
+}
+
+/* Red and black theme */
+body {
+  background-color: #222;
+}
+
+header {
+  border-bottom: 3px solid #f00;
+}
+
+nav a {
+  color: #f00;
+}
+
+h2 {
+  color: #f00;
+  text-shadow: 1px 1px #000; /* Add a subtle text shadow */
+}
+
+.contact p {
+  color: #fff;
+  text-shadow: 1px 1px #000; /* Add a subtle text shadow */
+}
+
+.contact li {
+  color: #fff;
+  text-shadow: 1px 1px #000; /* Add a subtle text shadow */
+}
+
+.contact li a:hover {
+  text-decoration: underline; /* Add an underline on hover */
 }
