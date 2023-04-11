@@ -4,6 +4,7 @@ body {
   font-family: Arial, sans-serif;
   font-size: 16px;
   line-height: 1.5;
+  background-color: #111;
 }
 
 h1, h2, h3 {
@@ -22,16 +23,17 @@ a {
 
 /* Header styles */
 header {
-  background-color: #000;
+  background-color: #f00;
   color: #fff;
   padding: 20px;
+  border-bottom: 3px solid #000;
 }
 
 nav ul {
   margin: 0;
   padding: 0;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end; /* Align the navigation to the right */
   align-items: center; /* Center the navigation vertically */
 }
 
@@ -60,7 +62,7 @@ main {
 }
 
 h2 {
-  color: #000;
+  color: #f00;
   font-size: 24px;
   margin-top: 40px;
   margin-bottom: 20px;
@@ -82,6 +84,11 @@ ul li {
 .contact p {
   margin-bottom: 10px;
   text-align: center; /* Center the paragraph text horizontally */
+  color: #fff;
+}
+
+.contact p span {
+  color: #000;
 }
 
 .contact ul {
@@ -105,34 +112,20 @@ ul li {
   margin-bottom: 10px;
 }
 
+/* Footer styles */
+footer {
+  text-align: center; /* Center the footer horizontally */
+  padding: 20px;
+  background-color: #000;
+  color: #fff;
+}
+
 /* Red and black theme */
-body {
-  background-color: #222;
-}
-
-header {
-  border-bottom: 3px solid #f00;
-}
-
 nav a {
-  color: #f00;
-}
-
-h2 {
-  color: #f00;
-  text-shadow: 1px 1px #000; /* Add a subtle text shadow */
-}
-
-.contact p {
   color: #fff;
-  text-shadow: 1px 1px #000; /* Add a subtle text shadow */
-}
-
-.contact li {
-  color: #fff;
-  text-shadow: 1px 1px #000; /* Add a subtle text shadow */
 }
 
 .contact li a:hover {
   text-decoration: underline; /* Add an underline on hover */
 }
+
